@@ -1,0 +1,21 @@
+<div *ngIf="isFavorite">
+    <div *ngFor="let job of jobList">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- <img src="{{job.companyLogo}}" alt="API Image" /> -->
+                <img src="" alt="API Image" />
+            </div>
+            <div class="col-md-8">
+                <a routerLink="/jobDetails" style="cursor: pointer;" (click)="onJobDetail(job)"><h3>{{job.title}}</h3></a>
+                <div class="disc">
+                    <h5>Company : {{job.companyName}}   Reference : {{job.reference}}</h5>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div *ngIf="!isFavorite">
+    <div class="nofavDiv">{{noFavJob}}</div>
+</div>
+     

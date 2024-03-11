@@ -1,0 +1,15 @@
+img {
+    max-width: 150px;
+    height: auto;
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.color-yellow{
+    color: yellow;
+    fill: yellow;
+}

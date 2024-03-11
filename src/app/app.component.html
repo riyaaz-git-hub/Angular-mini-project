@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="headerLabel">
+        <h2>Find Your Job</h2>
+    </div>
+    <div class="tab">
+        <button class="tablinks" (click)="setTab('jobList')">Jobs List</button>
+        <button class="tablinks" (click)="setTab('favouriteJob')">Favourite Jobs</button>
+    </div>
+    
+    <router-outlet></router-outlet>
+</div>
