@@ -6,7 +6,7 @@ export interface JobData {
   id: number,
   companyName: string,
   title: string,
-  companyLogo: any,
+  companyLogo: string,
   reference: string,
   isSelectedFav: boolean
 } 
@@ -18,7 +18,7 @@ export interface JobData {
 export class ServiceService {
   selectedJobArray: JobData[] = [];
   duplicateArray : JobData[] = [];
-  shareSelectedJob: any;
+  shareSelectedJob!: JobData;
   favouriteJob: JobData[] = [];
   DuplicateJobList: JobData[] = [];
   

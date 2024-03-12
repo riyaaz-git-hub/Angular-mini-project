@@ -27,7 +27,6 @@ export class JobListComponent implements OnInit {
   http = inject(HttpClient)
   jobList: JobData[] = [];
   isSelected: boolean = false;
-  dataUrl: any;
   error: string = "data not loading";
   constructor(private ServiceService: ServiceService, private router: Router){}
 
@@ -83,6 +82,7 @@ export class JobListComponent implements OnInit {
 
 
   onJobDetail(selectedJob: JobData) {
+    debugger;
     this.ServiceService.shareSelectedJob = selectedJob;
     this.router.navigate(['/jobDetails']);
   }

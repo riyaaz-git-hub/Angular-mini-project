@@ -7,7 +7,7 @@ export interface JobData {
   id: number,
   companyName: string,
   title: string,
-  companyLogo: any,
+  companyLogo: string,
   reference: string
 } 
 
@@ -24,7 +24,7 @@ export class FavoriteJobsComponent implements OnInit {
 
   constructor(private ServiceService: ServiceService,
     private router: Router){}
-  jobList: JobData[] = [];
+    jobList: JobData[] = [];
 
   ngOnInit(): void {
     if(this.ServiceService.favouriteJob.length !== 0) {
