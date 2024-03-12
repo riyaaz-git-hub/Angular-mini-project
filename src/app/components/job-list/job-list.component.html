@@ -2,10 +2,7 @@
     <div *ngFor="let job of jobList">
         <div class="row">
             <div class="col-md-2">
-                <!-- <img src="{{job.companyLogo}}" alt="API Image" /> -->
-                <!-- <img  alt="API Image" [src]="getImage(job)"/> -->
-                <!-- <img [src]="imageUrl" alt="API Image" /> -->
-                <img src="" alt="API Image" />
+                <img src="{{job.companyLogo}}" alt="API Image" />
             </div>
             <div class="col-md-8">
                 <a routerLink="/jobDetails" style="cursor: pointer;" (click)="onJobDetail(job)"><h3>{{job.title}}</h3></a>

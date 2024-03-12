@@ -21,7 +21,7 @@ export class ServiceService {
   shareSelectedJob!: JobData;
   favouriteJob: JobData[] = [];
   DuplicateJobList: JobData[] = [];
-  
+  imageUrl: "assets/images" = "assets/images";
   constructor(private http: HttpClient) { }
 
 featch() {

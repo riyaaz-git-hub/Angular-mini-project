@@ -13,4 +13,9 @@
         border-radius: 25px;
         background-color: #2196F3;
         margin-top: 8px;
-      }
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}

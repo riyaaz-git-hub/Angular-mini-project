@@ -82,7 +82,6 @@ export class JobListComponent implements OnInit {
 
 
   onJobDetail(selectedJob: JobData) {
-    debugger;
     this.ServiceService.shareSelectedJob = selectedJob;
     this.router.navigate(['/jobDetails']);
   }
