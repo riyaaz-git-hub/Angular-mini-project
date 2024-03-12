@@ -8,7 +8,8 @@ export interface JobData {
   companyName: string,
   title: string,
   companyLogo: string,
-  reference: string
+  reference: string,
+  isSelectedFav: boolean
 } 
 
 @Component({
@@ -37,6 +38,7 @@ export class FavoriteJobsComponent implements OnInit {
   }
 
   onJobDetail(selectedJob: JobData) {
+    this.ServiceService.shareSelectedJob = selectedJob;
     this.router.navigate(['/jobDetails']);
   }
 }
